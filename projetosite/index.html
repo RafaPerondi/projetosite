@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcadia Games</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Arcadia Games</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="playstation.html">PlayStation</a></li>
+                <li><a href="xbox.html">Xbox</a></li>
+                <li><a href="nintendo.html">Nintendo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner" id="banner">
+        <div class="banner-item active" style="background-image: url('playstation/1080x4001.gif');">
+            <div class="banner-content">
+                <h2><a href="playstation.html">PlayStation 5</a></h2>
+            </div>
+        </div>
+        <div class="banner-item" style="background-image: url('playstation/1080x4001.gif');">
+            <div class="banner-content">
+                <h2><a href="xbox.html">Xbox Series X</a></h2>
+            </div>
+        </div>
+        <div class="banner-item" style="background-image: url('playstation/1080x4001.gif');">
+            <div class="banner-content">
+                <h2><a href="nintendo.html">Nintendo Switch</a></h2>
+            </div>
+        </div>
+        <div class="arrow left-arrow" onclick="prevBanner()">&#10094;</div>
+        <div class="arrow right-arrow" onclick="nextBanner()">&#10095;</div>
+    </div>
+    
+
+    <section class="products">
+        <h2>Consoles Disponíveis</h2>
+        <div class="product">
+            <h3>PlayStation 5</h3>
+            <p>R$ 4.999,00</p>
+        </div>
+        <div class="product">
+            <h3>Xbox Series X</h3>
+            <p>R$ 4.499,00</p>
+        </div>
+        <div class="product">
+            <h3>Nintendo Switch</h3>
+            <p>R$ 2.499,00</p>
+        </div>
+        <div class="product">
+            <h3>Nintendo WiiU</h3>
+            <p>R$ 0.000,00</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Informações da Loja</h3>
+            <p><strong>Nome da Loja:</strong> Arcadia LTDA</p>
+            <p><strong>CNPJ:</strong> 12.345.678/0001-90</p>
+            <p><strong>Endereço:</strong> Av. dos Videogames, 123 - Centro, Santa - SC</p>
+            <p><strong>Email:</strong> contato@arcadiagames.com.br</p>
+            <p><strong>Telefone:</strong> (11) 98765-4321</p>
+            <p><strong>WhatsApp:</strong> (11) 91234-5678</p>
+            <p><a href="#">Termos de Uso</a> | <a href="#">Política de Privacidade</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

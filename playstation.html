@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStation 5</title>
+    <link rel="stylesheet" href="playstation-styles.css"> <!-- CSS específico da PlayStation -->
+</head>
+<body>
+    <!-- Vídeo de introdução exclusivo para PlayStation -->
+    <div id="video-intro">
+        <video id="introVideoPlay" autoplay muted>
+            <source src="videoplay/1080 logo play.mp4" type="video/mp4"> <!-- Substitua com o caminho correto do vídeo -->
+            Seu navegador não suporta a reprodução de vídeos.
+        </video>
+    </div>
+    
+    <!-- Conteúdo da página (inicialmente oculto) -->
+    <div id="content" style="display: none;">
+        <header>
+            <h1>PlayStation - Produtos</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Voltar para a loja</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Seção de Produtos -->
+        <section class="products">
+            <!-- Produto 1 -->
+            <div class="product">
+                <img src="Imagens/playstation/1.jpg">
+                    <h3>PlayStation</h3>
+                    <p><strong>Preço:</strong> R$ 1.800,00</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="product">
+                    <img src="Imagens/playstation/2.jpg">
+                    <h3>PlayStation 2 - Slim</h3>
+                    <p><strong>Preço:</strong> R$ 960,00</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="product">
+                    <img src="Imagens/playstation/3.jpg">
+                    <h3>PlayStation 3 - Ultra Slim</h3>
+                    <p><strong>Preço:</strong> R$ 1.200,00</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="product">
+                    <img src="Imagens/playstation/4.jpg">
+                    <h3>PlayStation 4 - Pro</h3>
+                    <p><strong>Preço:</strong> R$ 2,800,00</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+
+                <!-- Produto 5 -->
+                <div class="product">
+                    <img src="Imagens/playstation/5.jpg">
+                    <h3>PlayStation 5 - Slim</h3>
+                    <p><strong>Preço:</strong> R$ 3.600,00</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Arcadia Games. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script> <!-- Script para ocultar o vídeo -->
+    <script>
+        // Acelera o vídeo de introdução do PlayStation para 1.25x
+        document.getElementById('introVideoPlay').onloadeddata = function() {
+            this.playbackRate = 1.25;  // Acelera o vídeo para 1.25x na página PlayStation
+        };
+
+        // Quando o vídeo terminar, revela o conteúdo da página
+        document.getElementById('introVideoPlay').addEventListener('ended', function() {
+            document.getElementById('video-intro').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

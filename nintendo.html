@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nintendo Switch - Produtos</title>
+    <link rel="stylesheet" href="nintendo-styles.css"> <!-- Estilos exclusivos para esta página -->
+</head>
+<body>
+    <!-- Vídeo de introdução exclusivo para Nintendo -->
+    <div id="video-intro">
+        <video id="introVideoNintendo" autoplay muted>
+            <source src="videonintendo/intronintendo1080.mp4" type="video/mp4"> <!-- Substitua com o caminho correto do vídeo -->
+            Seu navegador não suporta a reprodução de vídeos.
+        </video>
+    </div>
+
+    <!-- Conteúdo da página -->
+    <div id="content" style="display:none;">
+        <header>
+            <h1>Nintendo - Produtos</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Voltar para a loja</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Seção de Produtos -->
+        <section class="products">
+                <div class="product-list">
+                <!-- Produto 1 -->
+                <div class="product">
+                    <img src="Imagens/nintendo/1.jpg">
+                    <h2>Nintendo - Game Cube</h2>
+                    <p><strong>Preço:</strong> R$ 1.500,00</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="product">
+                    <img src="Imagens/nintendo/2.jpg">
+                    <h2>Nintendo - 64</h2>
+                    <p><strong>Preço:</strong> R$ 2.100,00</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="product">
+                    <img src="Imagens/nintendo/3.jpg">
+                    <h2>Nintendo - 3DS</h2>
+                    <p><strong>Preço:</strong> R$ 1.000,00</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="product">
+                    <img src="Imagens/nintendo/4.jpg">
+                    <h2>Nintendo - Switch</h2>
+                    <p><strong>Preço:</strong> R$ 2.700,00</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+
+                <!-- Produto 5 -->
+                <div class="product">
+                    <img src="Imagens/nintendo/5.jpg">
+                    <h2>Nintendo - Wii</h2>
+                    <p><strong>Preço:</strong> R$ 680,00</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Arcadia Games. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script> <!-- Script para ocultar o vídeo -->
+    <script>
+        // Acelera o vídeo de introdução do Nintendo para 1.5x
+        document.getElementById('introVideoNintendo').onloadeddata = function() {
+            this.playbackRate = 1.5;
+        };
+
+        // Quando o vídeo terminar, revela o conteúdo da página
+        document.getElementById('introVideoNintendo').addEventListener('ended', function() {
+            document.getElementById('video-intro').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcadia Games</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo arcadia png.png" alt="Logo Arcadia Games" class="logo">
+        <nav>
+            <ul class="menu">
+                <li><a href="playstation.html">PlayStation</a></li>
+                <li><a href="xbox.html">Xbox</a></li>
+                <li><a href="nintendo.html">Nintendo</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <div class="banner" id="banner">
+        <a href="nintendo.html" class="banner-item" style="background-image: url('Imagens/banners/1.jpg');">
+            <div class="banner-content">
+                <h2>Nintendo</h2>
+            </div>
+        </a>
+        <a href="playstation.html" class="banner-item active" style="background-image: url('Imagens/banners/2.jpg');">
+            <div class="banner-content">
+                <h2>PlayStation</h2>
+            </div>
+        </a>
+        <a href="xbox.html" class="banner-item" style="background-image: url('Imagens/banners/3.jpg');">
+            <div class="banner-content">
+                <h2>Xbox</h2>
+            </div>
+        </a>
+        <div class="arrow left-arrow" onclick="prevBanner()">&#10094;</div>
+        <div class="arrow right-arrow" onclick="nextBanner()">&#10095;</div>
+    </div>    
+
+   <br><h2>Consoles Disponíveis</h2><br>
+
+    <section class="products">
+               <div class="product-list">
+            <div class="product">
+                <img src="Imagens/playstation/5.jpg" alt="PlayStation 5">
+                <h3>PlayStation 5</h3>
+                <p>R$ 3.600,00</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="Imagens/playstation/2.jpg" alt="PlayStation 2">
+                <h3>PlayStation 2 - Slim</h3>
+                <p>R$ 960,00</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="Imagens/xbox/3.jpg" alt="Xbox Series X">
+                <h3>Xbox Series X</h3>
+                <p>R$ 4.500,00</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="Imagens/nintendo/4.jpg" alt="Nintendo Switch">
+                <h3>Nintendo Switch</h3>
+                <p>R$ 2.700,00</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="Imagens/nintendo/2.jpg" alt="Nintendo 64">
+                <h3>Nintendo 64</h3>
+                <p>R$ 2.100,00</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="Imagens/xbox/2.jpg" alt="Xbox">
+                <h3>Xbox</h3>
+                <p>R$ 3.000,00</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    
+    <footer>
+        <div class="footer-content">
+            <h3>Informações da Loja</h3>
+            <p><strong>Nome da Loja:</strong> Arcadia LTDA</p>
+            <p><strong>CNPJ:</strong> 12.345.678/0001-90</p>
+            <p><strong>Endereço:</strong> Av. dos Videogames, 123 - Centro, Florianópolis - SC</p>
+            <p><strong>Email:</strong> contato@arcadiagames.com.br</p>
+            <p><strong>Telefone:</strong> (48) 98765-4321</p>
+            <p><strong>WhatsApp:</strong> (48) 91234-5678</p>
+            <p><a href="#">Termos de Uso</a> | <a href="#">Política de Privacidade</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

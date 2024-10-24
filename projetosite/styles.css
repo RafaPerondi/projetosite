@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 20px 0;
+    background-color: #222;
+    padding: 10px 0;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #858686;
+    color: rgb(247, 245, 245);
+}
+
+.banner {
+    position: relative;
+    height: 400px; /* Altera a altura para 400px */
+    width: 1080px; /* Altera a largura para 1920px */
+    overflow: hidden;
+    margin: 0 auto; /* Centraliza o banner na página */
+}
+
+.banner-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.banner-item.active {
+    opacity: 1;
+}
+
+.banner-content {
+    position: absolute;
+    text-align: center;
+    color: white;
+    width: 100%;
+    bottom: 20px;
+    font-size: 24px; /* Aumenta o tamanho da fonte, se necessário */
+}
+
+
+.products {
+    padding: 20px;
+    text-align: center;
+}
+
+.product {
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+footer a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 36px; /* Tamanho das setas */
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    user-select: none; /* Evita a seleção de texto ao clicar */
+    z-index: 10; /* Garante que as setas fiquem acima do banner */
+}
+
+.left-arrow {
+    left: 20px; /* Distância da borda esquerda */
+}
+
+.right-arrow {
+    right: 20px; /* Distância da borda direita */
+}
+
+.arrow:hover {
+    color: #00aaff; /* Cor ao passar o mouse */
+}

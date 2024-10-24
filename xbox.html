@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xbox Series X</title>
+    <link rel="stylesheet" href="xbox-styles.css"> <!-- CSS específico do Xbox -->
+</head>
+<body>
+    <!-- Vídeo de introdução exclusivo para Xbox -->
+    <div id="video-intro">
+        <video id="introVideoXbox" autoplay muted>
+            <source src="videoxbox/videoxbox1080.mp4" type="video/mp4"> <!-- Substitua com o caminho correto do vídeo -->
+            Seu navegador não suporta a reprodução de vídeos.
+        </video>
+    </div>
+
+    <!-- Conteúdo da página (inicialmente oculto) -->
+    <div id="content" style="display: none;">
+        <header>
+            <h1>Xbox - Produtos</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Voltar para a loja</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Seção de Produtos -->
+        <section class="products">
+            <!-- Produto 1 -->
+            <div class="product">
+                <img src="Imagens/xbox/1.jpg">
+                <h3>Xbox 360 - Arcade</h3>
+                <p class="price">R$ 1.700,00</p>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="product">
+                <img src="Imagens/xbox/2.jpg">
+                <h3>Xbox</h3>
+                <p class="price">R$ 3.000,00</p>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="product">
+                <img src="Imagens/xbox/3.jpg">
+                <h3>Xbox Series X</h3>
+                <p class="price">R$ 4.500,00</p>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </div>
+
+            <!-- Produto 4 -->
+            <div class="product">
+                <img src="Imagens/xbox/4.jpg">
+                <h3>Xbox Series S</h3>
+                <p class="price">R$ 2.700,00</p>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </div>
+
+            <!-- Produto 5 -->
+            <div class="product">
+                <img src="Imagens/xbox/5.jpg">
+                <h3>Xbox One</h3>
+                <p class="price">R$ 1.400,00</p>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Arcadia Games. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script> <!-- Script para ocultar o vídeo -->
+    <script>
+        // Acelera o vídeo de introdução do Xbox para 1.5x
+        document.getElementById('introVideoXbox').onloadeddata = function() {
+            this.playbackRate = 1.5;  // Acelera o vídeo para 1.5x na página Xbox
+        };
+
+        // Quando o vídeo terminar, revela o conteúdo da página
+        document.getElementById('introVideoXbox').addEventListener('ended', function() {
+            document.getElementById('video-intro').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
